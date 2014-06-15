@@ -1,4 +1,5 @@
 Scroll::Application.routes.draw do
+  get "homepage/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -13,7 +14,8 @@ Scroll::Application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-
+resources :homepage
+root 'homepage#index'
   # Example resource route with options:
   #   resources :products do
   #     member do
