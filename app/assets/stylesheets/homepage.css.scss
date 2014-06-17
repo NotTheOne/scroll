@@ -2,17 +2,19 @@
 body {
 	text-align: center;
 	font-family: Helvetica;
-	background: url("palm-tree.jpg");
-	background-size: cover;
-	background-position: center; 
+	background: black;
+	background-position: center;
 	color: white;
+	width: auto;
 }
 
 header {
-	text-align: center;
+	background: url("palm-tree.jpg");
 	background-size: cover;
-	background: url("lines-bg.jpg");
-	color: white;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	margin: 0 auto;
 }
 
 p {
@@ -24,8 +26,8 @@ p {
 input {
 	text-align: center;
 	border-radius: 5px;
-	padding: 1px;
-	font-size: 18px;
+	padding: 8px;
+	font-size: 14px;
 }
 
 input[type="submit"] {
@@ -35,14 +37,14 @@ input[type="submit"] {
 
 ul {
 	padding: 15px;
-	background:black;
+	background:#202020;
 }
 
 li {
 	display: inline;
 	padding: 0px 10px 0px 10px;
-
 }
+
 a {
 	color: white;
 }
@@ -53,5 +55,26 @@ h1 {
 
 img {
 	margin: 85px 0px 0px 0px;
-	border: 5px solid white;
+	// border: 5px solid white;
+	height: 250px;
+}
+
+article {
+	max-width: 900px;
+	padding: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+// If screen < 500px, the following applies: 
+
+@media (max-width: 500px) {
+	h1 {
+		font-size: 36px;
+	}
+
+	li {
+		display: block; // will show the items at the navbar in block when necessary
+		padding: 5px;
+	}
 }
